@@ -10,7 +10,12 @@
         <h1>ТЕХНОМАРТ</h1>
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
         <img src="img/icon-search.svg" width="17" height="17" alt="Поиск">
-        <!-- здесь будет форма ввода информации для поиска -->
+        <p>
+          <label>
+            Поиск:
+            <input type="text" name="search" placeholder="">
+          </label>
+        </p>
         <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
         <a href="#">Закладки: 0</a>
         <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">
@@ -55,28 +60,86 @@
       </section>
       <section>
         <h2>ПЕРФОРАТОРЫ</h2>
-        <div>
+        <form action="https://echo.htmlacademy.ru" method="get">
           <p>Фильтр</p>
           <h3>Цена</h3>
-          <!-- input -->
-          <!-- input -->
+          <!-- input что делать с ползунком?-->
+          <p>
+            <label>
+              Нижний диапозон цены
+              <input type="text" name="search" placeholder="0">
+            </label>
+          </p>
           <p> — </p>
-          <!-- input -->
-          <h3>ПРОИЗВОДИТЕЛИ</h3>
-          <ul>
-            <li><img src="img/checkbox-on.svg" width="27" height="23" alt="Параметр выбран">BOSH</li>
-            <li><img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">ИНТЕРСКОЛ</li>
-            <li><img src="img/checkbox-on.svg" width="27" height="23" alt="Параметр выбран">MAKITA</li>
-            <li><img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">DEWALT</li>
-            <li><img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">HITACHI</li>
-          </ul>
-          <h3>ПИТАНИЕ</h3>
-          <ul>
-            <li><img src="img/radio-on.svg" width="25" height="25" alt="Параметр выбран">АККУМУЛЯТОРНЫЕ</li>
-            <li><img src="img/radio-off.svg" width="25" height="25" alt="Параметр не выбран">СЕТЕВЫЕ</li>
-          </ul>
-          <button type="button">ПОКАЗАТЬ</button>
-        </div>
+          <p>
+            <label>
+              Верхний диапозон цены
+              <input type="text" name="search" placeholder="30000">
+            </label>
+          </p>
+
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label>
+                  <img src="img/checkbox-on.svg" width="27" height="23" alt="Параметр выбран">
+                  <input id="filter-bosh" type="checkbox" name="bosh" checked>
+                  BOSH
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">
+                  <input id="filter-interskol" type="checkbox" name="interskol">
+                  ИНТЕРСКОЛ
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="img/checkbox-on.svg" width="27" height="23" alt="Параметр выбран">
+                  <input id="filter-makita" type="checkbox" name="makita">
+                  MAKITA
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">
+                  <input id="filter-dewalt" type="checkbox" name="dewalt">
+                  DEWALT
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">
+                  <input id="filter-hitachi" type="checkbox" name="hitachi">
+                  HITACHI
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <label>
+                  <img src="img/radio-on.svg" width="25" height="25" alt="Параметр выбран">
+                  <input id="filter-battery" type="radio" name="power-type" value="battery" checked>
+                  АККУМУЛЯТОРНЫЕ
+                </label>
+              </li>
+              <li>
+                <label>
+                  <img src="img/radio-off.svg" width="25" height="25" alt="Параметр не выбран">
+                  <input id="filter-network" type="radio" name="power-type" value="network">
+                  СЕТЕВЫЕ
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </form>
         <div>
           <p>Сортировка</p>
           <p>По цене</p>
