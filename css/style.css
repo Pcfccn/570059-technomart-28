@@ -1,0 +1,481 @@
+:root {
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-grey: #3d546f;
+  --basic-greylight: #c5c5c5;
+  --basic-greylight-transparent: rgba(77, 77, 77, 0.3);
+  --basic-background: #f1f5f7;
+  --white: #ffffff;
+  --white-semitransparent: rgba(255, 255, 255, 0.5);
+  --white-transparent: rgba(255, 255, 255, 0.3);
+  --black: #000000;
+  --black-transparent: rgba(0, 0, 0, 0.3);
+  --special-ylellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-lilac: #dc91d8;
+  --special-greenlight: #8ed78f;
+  --special-greylight-transparent: rgba(66, 66, 66, 0.3);
+  --special-yellowlight: #ffd180;
+  --success-color: #5fbb2d;
+  --error-color: #ba2732;
+  --header-background-color: #293449;
+  --clicked-white-text: rgba(255, 255, 255, 0.5);
+  --special-gray: #32425c;
+  --special-gray-text: #a9a9a9;
+  --footer-p-color: #f3f7f9;
+  --filter-and-sort-background-color: #f7f3ec;
+  --button-border-color: #e5e5e5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.logo-technomart {
+  background-color: var(--basic-red);
+}
+
+.main-header {
+  background-color: var(--basic-background);
+}
+
+.main-header-wrapper {
+  background-color: var(--header-background-color);
+}
+.place-an-order {
+  background-color: var(--basic-green);
+  color: white;
+}
+.main-header-wrapper a:focus,
+.main-header-wrapper button:focus {
+  color: var(--clicked-white-text);
+}
+.main-header .description {
+  color: var(--basic-red);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.main-header .phone {
+  color: var(--basic-red);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: var(--footer-p-color);
+  border: 3px solid var(--white);
+}
+
+.main-header .adress {
+  color: var(--special-gray);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login,
+.registration {
+  height: 45px;
+  background-color: var(--white);
+  font-size: 21px;
+  border-style: none;
+}
+
+.login {
+  width: 121px;
+  background-image: url("../img/icon-login.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.registration {
+  width: 150px;
+}
+
+.login:hover,
+.registration:hover,
+.login:focus,
+.registration:focus {
+  outline: none;
+  color: var(--basic-red);
+}
+
+.login:active,
+.registration:active {
+  color: var(--basic-greylight);
+  outline: none;
+}
+
+.main-navigation {
+  background-color: var(--special-gray);
+}
+
+.site-navigation li:hover,
+.site-navigation li:focus {
+  background-color: var(--header-background-color);
+}
+
+.site-navigation a:active {
+  background-color: var(--header-background-color);
+  color: var(--white-semitransparent);
+}
+
+.guarantee,
+.credit,
+.popup-map,
+.popup-write-us {
+  display: none;
+}
+
+.features h3 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.features li a {
+  background-color: var(--white-transparent);
+}
+
+.features li a:hover,
+.features li a:focus {
+  background-color: var(--basic-greylight-transparent);
+}
+
+.features li a:active {
+  background-color: var(--special-greylight-transparent);
+}
+
+.features li:nth-child(4n + 1) {
+  background-color: var(--special-ylellow);
+}
+
+.features li:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.features li:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.features li:nth-child(4) {
+  background-color: var(--special-greenlight);
+}
+
+.main-feature {
+  background-color: var(--special-gray);
+}
+.main-feature h3 {
+  font-size: 36px;
+}
+
+.main-feature p {
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.red-button-link {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+  border-style: none;
+  outline: none;
+}
+
+.red-button-link:active {
+  background-color: var(--error-color);
+}
+
+.popular-goods h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.popular-goods p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.popular-goods p:first-child {
+  text-decoration-line: line-through;
+  color: var(--special-gray-text);
+}
+/* почему не работет :nth-child() для p */
+.popular-goods p:nth-child(2) {
+  background-image: url("../img/red-button.svg");
+}
+
+.services,
+.about-drill {
+  background-color: var(--basic-background);
+}
+.services p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services button {
+  width: 240px;
+  height: 61px;
+  outline: none;
+  border-style: none;
+  background-color: var(--special-gray);
+  color: var(--white);
+}
+
+button.active-service-button {
+  background-color: var(--white);
+  color: var(--special-gray);
+}
+.services button:hover {
+  color: var(--white);
+  background-color: var(--header-background-color);
+}
+
+.about-company p,
+.contacts p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.main-footer {
+  background-color: var(--special-gray);
+}
+
+.main-footer p {
+  color: var(--footer-p-color);
+}
+
+.offers a {
+  color: var(--special-yellowlight);
+}
+
+.footer-contcts-and-social {
+  background-color: var(--header-background-color);
+}
+
+.footer-contcts-and-social p,
+.footer-contcts-and-social a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-contcts-and-social a {
+  color: var(--special-yellowlight);
+}
+
+.not-empty {
+  background-color: var(--basic-red);
+}
+
+.user-options {
+  background-color: var(--white);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-options a {
+  color: var(--black);
+}
+
+.user-options button {
+  outline: none;
+  border: none;
+  background-color: var(--white);
+}
+
+.my-orders,
+.profile {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-gray);
+}
+
+.current-directory a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+}
+
+.main-section h2 {
+  background-color: var(--basic-background);
+}
+
+.filter-and-sort {
+  background-color: var(--filter-and-sort-background-color);
+  border: none;
+}
+
+.filter li {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+fieldset {
+  border-style: none;
+}
+
+fieldset legend {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort {
+  text-transform: uppercase;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.sort li {
+  color: var(--black-transparent);
+  border-bottom: 1px var(--basic-red) dashed;
+}
+
+.sort li:hover,
+.sort li:focus {
+  border-bottom: 1px var(--basic-red) solid;
+}
+
+.sort li:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+.catalog h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.normal-price {
+  text-decoration-line: line-through;
+  color: var(--special-gray-text);
+}
+
+.sale-price {
+  color: var(--white);
+  background-image: url("../img/red-button.svg");
+  background-repeat: no-repeat;
+}
+
+.pagination a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  border: 1px solid var(--button-border-color);
+  border-radius: 2px;
+}
+
+.active-page {
+  background-color: var(--basic-red);
+}
+a.active-page {
+  color: var(--white);
+}
+
+.about-drill p{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}

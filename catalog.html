@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div>
-        <h1>ТЕХНОМАРТ</h1>
-        <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
+    <header class="main-header">
+      <div class="main-header-wrapper">
+        <h1 class="visually-hidden">ТЕХНОМАРТ</h1>
+        <a href="index.html">
+          <img
+            class="logo-technomart"
+            src="img/logo-technomart.svg"
+            width="108"
+            height="18"
+            alt="Техномарт"
+          />
+        </a>
         <p>
-          <img src="img/icon-search.svg" width="17" height="17" alt="Поиск">
-          <label>
-            Поиск:
-            <input type="text" name="search" placeholder="">
-          </label>
+          <img src="img/icon-search.svg" width="17" height="17" alt="Поиск" />
+          <input type="text" name="search" placeholder="Поиск:" />
         </p>
-        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
-        <a href="#">Закладки: 0</a>
-        <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина">
-        <a href="#">Корзина: 10</a>
-        <button type="button">Оформить заказ</button>
+        <a href="#"
+          ><img
+            src="img/icon-bookmark.svg"
+            width="14"
+            height="16"
+            alt="Закладки"
+          />Закладки: 0</a
+        >
+
+        <a class="not-empty" href="#"
+          ><img
+            src="img/icon-cart.svg"
+            width="15"
+            height="15"
+            alt="Корзина"
+          />Корзина: 10</a
+        >
+        <button type="button" class="place-an-order">Оформить заказ</button>
       </div>
       <div>
-        <p>
-          Интернет-магазин
-          строительных материалов
-          и инструментов для ремонта
+        <p class="description">
+          Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
-        <img src="img/icon-phone.svg" width="19" height="19" alt="Телефон">
-        <p>+7 (812) 555-05-55</p>
-        <p>г.Санкт-Петербург, ул.Большая конюшенная, д.19/8</p>
-        <a href="#"><img src="img/icon-user.svg" width="20" height="18" alt="Пользователь">userName</a>
-        <button type="button"><img src="img/icon-logout.svg" width="20" height="17" alt="Выйти"></button>
-        <a href="#">Мои закказы</a>
-        <a href="#">Личный кабинет</a>
+        <p class="phone">
+          <img
+            src="img/icon-phone.svg"
+            width="19"
+            height="19"
+            alt="Телефон"
+          />+7 (812) 555-05-55
+        </p>
+        <p class="adress">г.Санкт-Петербург, ул.Большая конюшенная, д.19/8</p>
+        <p class="user-options">
+          <a href="#"
+            ><img
+              src="img/icon-user.svg"
+              width="20"
+              height="18"
+              alt="Пользователь"
+            />userName</a
+          >
+          <button type="button">
+            <img src="img/icon-logout.svg" width="20" height="17" alt="Выйти" />
+          </button>
+        </p>
+        <a class="my-orders" href="#">Мои закказы</a>
+        <a class="profile" href="#">Личный кабинет</a>
       </div>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -49,69 +108,125 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="current-directory">
         <ul>
-          <li><a href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Главная страница"></a></li>
-          <li><a href="catalog.html">КАТАЛОГ</a></li>
-          <li><a href="#">ИНСТРУМЕНТ</a></li>
-          <li><a href="#">ПЕРФОРАТОРЫ</a></li>
+          <li>
+            <a href="index.html"
+              ><img
+                src="img/icon-home.svg"
+                width="14"
+                height="12"
+                alt="Главная страница"
+            /></a>
+          </li>
+          <li>
+            <img src="img/icon-right-small.svg" /><a href="catalog.html"
+              >КАТАЛОГ</a
+            >
+          </li>
+          <li>
+            <img src="img/icon-right-small.svg" /><a href="#">ИНСТРУМЕНТ</a>
+          </li>
+          <li>
+            <img src="img/icon-right-small.svg" /><a href="#">ПЕРФОРАТОРЫ</a>
+          </li>
         </ul>
       </section>
-      <section>
+      <section class="main-section">
         <h2>ПЕРФОРАТОРЫ</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <p>Фильтр</p>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <p class="filter-and-sort">Фильтр:</p>
           <h3>Цена</h3>
-          <!-- input что делать с ползунком?-->
-          <p>
-            <label>
-              Нижний диапозон цены
-              <input type="text" name="search" placeholder="0">
-            </label>
-          </p>
-          <p> — </p>
-          <p>
-            <label>
-              Верхний диапозон цены
-              <input type="text" name="search" placeholder="30000">
-            </label>
-          </p>
-
+          <!-- input что делать с ползунком?  class="filter-and-sort"-->
+          <div>
+            <p>
+              <label>
+                Нижний диапозон цены
+                <input
+                  class="filter-and-sort"
+                  type="text"
+                  name="search"
+                  placeholder="0"
+                />
+              </label>
+            </p>
+            <p>—</p>
+            <p>
+              <label>
+                Верхний диапозон цены
+                <input
+                  class="filter-and-sort"
+                  type="text"
+                  name="search"
+                  placeholder="30000"
+                />
+              </label>
+            </p>
+          </div>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
               <li>
                 <label>
-                  <img src="img/checkbox-on.svg" width="27" height="23" alt="Параметр выбран">
-                  <input id="filter-bosh" type="checkbox" name="bosh" checked>
+                  <img
+                    src="img/checkbox-on.svg"
+                    width="27"
+                    height="23"
+                    alt="Параметр выбран"
+                  />
+                  <input id="filter-bosh" type="checkbox" name="bosh" checked />
                   BOSH
                 </label>
               </li>
               <li>
                 <label>
-                  <img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">
-                  <input id="filter-interskol" type="checkbox" name="interskol">
+                  <img
+                    src="img/checkbox-off.svg"
+                    width="27"
+                    height="23"
+                    alt="Параметр не выбран"
+                  />
+                  <input
+                    id="filter-interskol"
+                    type="checkbox"
+                    name="interskol"
+                  />
                   ИНТЕРСКОЛ
                 </label>
               </li>
               <li>
                 <label>
-                  <img src="img/checkbox-on.svg" width="27" height="23" alt="Параметр выбран">
-                  <input id="filter-makita" type="checkbox" name="makita">
+                  <img
+                    src="img/checkbox-on.svg"
+                    width="27"
+                    height="23"
+                    alt="Параметр выбран"
+                  />
+                  <input id="filter-makita" type="checkbox" name="makita" />
                   MAKITA
                 </label>
               </li>
               <li>
                 <label>
-                  <img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">
-                  <input id="filter-dewalt" type="checkbox" name="dewalt">
+                  <img
+                    src="img/checkbox-off.svg"
+                    width="27"
+                    height="23"
+                    alt="Параметр не выбран"
+                  />
+                  <input id="filter-dewalt" type="checkbox" name="dewalt" />
                   DEWALT
                 </label>
               </li>
               <li>
                 <label>
-                  <img src="img/checkbox-off.svg" width="27" height="23" alt="Параметр не выбран">
-                  <input id="filter-hitachi" type="checkbox" name="hitachi">
+                  <img
+                    src="img/checkbox-off.svg"
+                    width="27"
+                    height="23"
+                    alt="Параметр не выбран"
+                  />
+                  <input id="filter-hitachi" type="checkbox" name="hitachi" />
                   HITACHI
                 </label>
               </li>
@@ -123,15 +238,36 @@
             <ul>
               <li>
                 <label>
-                  <img src="img/radio-on.svg" width="25" height="25" alt="Параметр выбран">
-                  <input id="filter-battery" type="radio" name="power-type" value="battery" checked>
+                  <img
+                    src="img/radio-on.svg"
+                    width="25"
+                    height="25"
+                    alt="Параметр выбран"
+                  />
+                  <input
+                    id="filter-battery"
+                    type="radio"
+                    name="power-type"
+                    value="battery"
+                    checked
+                  />
                   АККУМУЛЯТОРНЫЕ
                 </label>
               </li>
               <li>
                 <label>
-                  <img src="img/radio-off.svg" width="25" height="25" alt="Параметр не выбран">
-                  <input id="filter-network" type="radio" name="power-type" value="network">
+                  <img
+                    src="img/radio-off.svg"
+                    width="25"
+                    height="25"
+                    alt="Параметр не выбран"
+                  />
+                  <input
+                    id="filter-network"
+                    type="radio"
+                    name="power-type"
+                    value="network"
+                  />
                   СЕТЕВЫЕ
                 </label>
               </li>
@@ -139,101 +275,216 @@
           </fieldset>
           <button type="submit">ПОКАЗАТЬ</button>
         </form>
-        <div>
-          <p>Сортировка</p>
-          <p>По цене</p>
-          <p>По типу</p>
-          <p>По функционалу</p>
-          <img src="img/icon-down-dir.svg">
-          <img src="img/icon-down-dir.svg">
+        <div class="filter-and-sort sort">
+          <p>Сортировка:</p>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По функционалу</li>
+          </ul>
+          <img src="img/icon-down-dir.svg" />
+          <img src="img/icon-down-dir.svg" />
         </div>
-        <div>
+        <div class="catalog">
           <ul>
             <li>
-              <img src="img/hammer-drill.png" alt="">
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/hammer-drill.png" alt="">
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/catalog-new.svg" width="70" height="70" alt="Новый товар!">
-              <button type="button"><img src="img/icon-cart.svg" width="20" height="18" alt="Купить">КУПИТЬ</button>
+              <img
+                src="img/catalog-new.svg"
+                width="70"
+                height="70"
+                alt="Новый товар!"
+              />
+              <button type="button">
+                <img
+                  src="img/icon-cart.svg"
+                  width="20"
+                  height="18"
+                  alt="Купить"
+                />КУПИТЬ
+              </button>
               <button type="button">В ЗАКЛАДКИ</button>
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/catalog-new.svg" width="70" height="70" alt="Новый товар!">
-              <img src="img/hammer-drill.png" alt="">
+              <img
+                src="img/catalog-new.svg"
+                width="70"
+                height="70"
+                alt="Новый товар!"
+              />
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/hammer-drill.png" alt="">
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/catalog-new.svg" width="70" height="70" alt="Новый товар!">
-              <img src="img/hammer-drill.png" alt="">
+              <img
+                src="img/catalog-new.svg"
+                width="70"
+                height="70"
+                alt="Новый товар!"
+              />
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/catalog-new.svg" width="70" height="70" alt="Новый товар!">
-              <img src="img/hammer-drill.png" alt="">
+              <img
+                src="img/catalog-new.svg"
+                width="70"
+                height="70"
+                alt="Новый товар!"
+              />
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/hammer-drill.png" alt="">
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
             <li>
-              <img src="img/catalog-new.svg" width="70" height="70" alt="Новый товар!">
-              <img src="img/hammer-drill.png" alt="">
+              <img
+                src="img/catalog-new.svg"
+                width="70"
+                height="70"
+                alt="Новый товар!"
+              />
+              <img src="img/hammer-drill.png" alt="" />
               <h3>Перфоратор Bosh BFG 6000</h3>
-              <p>30500 Р.</p>
-              <p><img src="img/red-button.svg" width="141" height="38" alt="Скидка!">25500 Р.</p>
+              <p class="normal-price">30500 Р.</p>
+              <p class="sale-price">
+                <!-- <img
+                  src="img/red-button.svg"
+                  width="141"
+                  height="38"
+                  alt="Скидка!"
+                /> -->
+                25500 Р.
+              </p>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="pagination">
           <ul>
-            <li><a href="#">1</a></li>
+            <li><a class="active-page" href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">Следующая</a></li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="about-drill">
         <h3>Пара слов о перфораторах</h3>
         <p>
-          Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-          бетоне и камне. Существуют электромеханические и пневмотические перфораторы. Современные модели могут выполнять
-          функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
-          устройстве будут совмещены отбойный молоток и ударная дрель.
+          Перфоратор - универсальный строительный инструмент. Предназначен для
+          сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют
+          электромеханические и пневмотические перфораторы. Современные модели
+          могут выполнять функции дрели, шуруповерта и отбойного молотка. В
+          ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+          будут совмещены отбойный молоток и ударная дрель.
         </p>
       </section>
-      <section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div>
-        <p>ТЕХНОМАРТ</p>
+        <a href="index.html">
+          <img
+            class="logo-technomart"
+            src="img/logo-technomart.svg"
+            width="108"
+            height="18"
+            alt="Техномарт"
+          />
+        </a>
         <ul>
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -242,30 +493,44 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <p>
-          г.Санкт-Петербург, ул.Большая конюшенная, д.19/8<br>
+          г.Санкт-Петербург, ул.Большая конюшенная, д.19/8<br />
           +7 (812) 555-05-55
         </p>
-        <ul>
+        <ul class="offers">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Спецпредложения</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-contcts-and-social">
         <p>
-          ©2010-2020 компания «Техномарт»<br>
+          ©2010-2020 компания «Техномарт»<br />
           Все права защищены
         </p>
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#"
+              ><img
+                src="img/icon-vk.svg"
+                width="26"
+                height="15"
+                alt="Вконтакте"
+            /></a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#"
+              ><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"
+            /></a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#"
+              ><img
+                src="img/icon-insta.svg"
+                width="21"
+                height="21"
+                alt="Инстаграм"
+            /></a>
           </li>
         </ul>
         <h4>Обратная связь:</h4>
